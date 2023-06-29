@@ -17,7 +17,13 @@ def sample_file_path():
 
 @pytest.fixture(scope="module")
 def sample_data(sample_file_path):
-    data = retrieve_data(sample_file_path, "ROTI")
+    times = [
+        datetime.datetime(2023, 2, 6, 1, 17),
+         datetime.datetime(2023, 2, 6, 1, 32),
+         datetime.datetime(2023, 2, 6, 1, 37)
+    ]
+    times = [t.replace(tzinfo=t.tzinfo or _UTC) for t in times]
+    data = retrieve_data(sample_file_path, "ROTI", times)
     _data={'ROTI':data}
     return _data
 
@@ -51,8 +57,8 @@ def test_plot_map(sample_file_path, sample_data):
             plot_times=list(sample_data["ROTI"].keys())[:3],
             data=sample_data,
             type_d="ROTI",
-            lon_limits=(-180, 180),
-            lat_limits=(-90, 90),
+            lon_limits=(25, 50),
+            lat_limits=(25, 50),
             nrows=1,
             ncols=3,
             markers=[],
@@ -70,8 +76,8 @@ def test_plot_map(sample_file_path, sample_data):
         plot_times=list(sample_data["ROTI"].keys())[:3],
         data=sample_data,
         type_d="ROTI",
-        lon_limits=(-180, 180),
-        lat_limits=(-90, 90),
+        lon_limits=(25, 50),
+        lat_limits=(25, 50),
         nrows=1,
         ncols=3,
         markers=[],
