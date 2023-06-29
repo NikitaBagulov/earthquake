@@ -10,7 +10,7 @@ def read_pipenv_dependencies(fname):
         return [dependency for dependency in lockjson.get('default')]
 
 setup(
-       name='earthquake',
+       name='eq',
        version='1.0',
        description='Data of global GNSS network are available at https://simurg.space, ionosonde data availabel through https://giro.uml.edu. The data paper uses along with notebook (with outputs preserved) are available here https://cloud.iszf.irk.ru/index.php/s/3RcnGdohf38kmAO . Email artem_vesnin@iszf.irk.ru if you have any questions about data format or behaviour of particular piece of code.',
        license='MIT',
@@ -25,5 +25,5 @@ setup(
                 'coverage',
             ],
        },
-       python_requires='>=3.11',
+       python_requires='>=3.10',
     )
