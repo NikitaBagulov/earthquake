@@ -13,8 +13,8 @@
 ```cd path/to/file```
 5. Установите библиотеки Conda\
 ```conda install cartopy```\
-```conda install h5py```
-```conda install scipy```
+```conda install h5py```\
+```conda install scipy```\
 7. Протестируйте библиотеку \
 ```make test```
 
