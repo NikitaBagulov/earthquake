@@ -34,7 +34,7 @@ plot_maps: Это функция для построения графиков н
 
 
 
-Результат функции plot_map:
+Результат работы функции plot_map:
 ![Результат функции plot_map:][1]
 
 [1]:https://github.com/NikitaBagulov/earthquake/blob/develop/images/image1.png
