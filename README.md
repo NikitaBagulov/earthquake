@@ -1,5 +1,5 @@
-# earthquake
- earthquake package for practice
+# Earthquake
+ Пакет Earthquake для постоения графиков о землетрясениях по данным. Данные глобальной сети GNSS доступны на https://simurg.space, данные ионозондов доступны на https://giro.uml.edu. Бумага с данными вместе с блокнотом (с сохраненными выходными данными) доступны здесь https://cloud.iszf.irk.ru/index.php/s/3RcnGdohf38kmAO. Пишите по адресу artem_vesnin@iszf.irk.ru, если у вас есть какие-либо вопросы о формате данных или поведении того или иного фрагмента кода.
 
 
 ## Установка
