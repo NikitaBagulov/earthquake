@@ -6,7 +6,7 @@ dev:
 	pip install -e .
 
 test: dev
-	pytest 
+	python app/test_earthquake.py
 
 build: clean
 	pip install wheel
