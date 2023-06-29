@@ -11,9 +11,11 @@
 ```conda activate earthquake```
 4. Перейдите в директорию с проектом\
 ```cd path/to/file```
-5. Установите библиотеку Cartopy\
-```conda install cartopy```
-6. Протестируйте библиотеку \
+5. Установите библиотеки Conda\
+```conda install cartopy```\
+```conda install h5py```
+```conda install scipy```
+7. Протестируйте библиотеку \
 ```make test```
 
 
